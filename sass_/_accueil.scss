@@ -26,6 +26,7 @@ body{
     display:flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
     counter-reset: func_num;
     font-family: 'Roboto', sans-serif;
 }
@@ -141,6 +142,7 @@ header{
             justify-content:flex-start;
             background-color: #f6f6f6;
             box-shadow: 1px 1px 2px black;
+            text-decoration: none;
 
             > *{
                 // background-color: #cbc9ce;
@@ -161,15 +163,14 @@ header{
                 > i:first-child{
                     width:25px;
                 }
-                p,
-                .func_menu{
-                    margin-left:135px;
+                p{
+                    margin-left:15px;
                 }
             }
 
             //set vertical space between functionning and restaurant List
             &:last-of-type{
-                margin-bottom:135px;
+                margin-bottom:80px;
             }
            
         }
@@ -209,6 +210,8 @@ header{
     width:100%;
     border:1px solid black;
     padding:5px;
+    padding-top: 30px;
+    background-color: #f0ecec;
     &__list{
         border:1px dotted lightblue;
         // padding:5px;
@@ -229,6 +232,8 @@ header{
         height:251px;
         border-radius: 15px;
         box-shadow: 1px 1px 3px black;
+        text-decoration: none;
+        color:black;
         &__img{
             // border:1px solid yellow;
             width:100%;

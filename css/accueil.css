@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   counter-reset: func_num;
   font-family: "Roboto", sans-serif;
 }
@@ -111,6 +112,7 @@ header {
   justify-content: flex-start;
   background-color: #f6f6f6;
   box-shadow: 1px 1px 2px black;
+  text-decoration: none;
 }
 .functionning_list .func_design:hover {
   background-color: #f4ecfe;
@@ -125,12 +127,11 @@ header {
 .functionning_list .func_design .func_icon_title > i:first-child {
   width: 25px;
 }
-.functionning_list .func_design .func_icon_title p,
-.functionning_list .func_design .func_icon_title .func_menu {
-  margin-left: 135px;
+.functionning_list .func_design .func_icon_title p {
+  margin-left: 15px;
 }
 .functionning_list .func_design:last-of-type {
-  margin-bottom: 135px;
+  margin-bottom: 80px;
 }
 .functionning .func_count {
   position: absolute;
@@ -153,6 +154,8 @@ header {
   width: 100%;
   border: 1px solid black;
   padding: 5px;
+  padding-top: 30px;
+  background-color: #f0ecec;
 }
 .restaurant__list {
   border: 1px dotted lightblue;
@@ -169,6 +172,8 @@ header {
   height: 251px;
   border-radius: 15px;
   box-shadow: 1px 1px 3px black;
+  text-decoration: none;
+  color: black;
 }
 .restaurant__type__img {
   width: 100%;
