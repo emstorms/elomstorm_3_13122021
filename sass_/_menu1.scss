@@ -139,6 +139,7 @@ main{
                 display:flex;
                 justify-content:space-between;
                 align-items:center;
+                width:99%;
                 position:relative;
                 border:1px solid green;
                 margin-top:10px;
@@ -150,11 +151,12 @@ main{
                 color:black;
                 border-radius:15px;
                 &_price{
-                    flex:0 0 45%;
+                    flex:0 0 auto;
                     align-self:flex-end;
                     transition:transform 400ms;
-                    width:45%;
+                    width:30px;
                     background-color:green;
+                    border:2px solid blue;
                 }
                 &__name{
                     display: flex;
@@ -166,7 +168,7 @@ main{
                     white-space: nowrap;
                     padding: 10px;    
                     // flex-basis: 65%;
-                    flex:1 0 65%;
+                    flex:1 1 65%;
                     // Making ellipssis text on overflow
                     p{
                         overflow:hidden;
@@ -189,8 +191,9 @@ main{
                     flex-basis:auto;
                     flex:1 1 auto;
                     border:1px solid black;
-                    // width:40%;
+                    // width:0px;
                     height: 100%;
+                   
                 }
 
                 .valid_choice{
@@ -199,13 +202,15 @@ main{
                     display:flex;
                     justify-content: center;
                     align-items: center;
-                    // position:absolute;
-                    // right:-15%;
+                    position:relative;
+                    right:-45%;
                     max-width:65%;
                     height:100%;
                     background-color:lightgreen;
-                    transition-property:transform;
-                    transition-duration:400ms;
+                    transition-property:transform, width, position;
+                    transition-duration:500ms;
+                    width:0px;
+                    // display:none;
 
                     .fa-check-circle{
                         transform:rotateZ(-180deg);
@@ -231,6 +236,10 @@ main{
 
                     .valid_choice{
                     // transform:translateX(-100%);
+                    // display:flex;
+                    // width:65%;
+                    width:60px;
+                    right:0;
                       .fa-check-circle{
                           transform:rotateZ(00deg) scale(1.5);
                       }
