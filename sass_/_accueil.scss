@@ -110,7 +110,7 @@ header{
 .functionning{
     width:100%;
     margin-top:20px;
-    border:1px solid blue;
+    // border:1px solid blue;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -125,7 +125,7 @@ header{
         // 15px to align title with funclist
         // padding:0 15px;
         width:100%;
-        margin-top:25px;
+        margin-top:40px;
         padding: 0 5px;
 
         .func_design{
@@ -137,8 +137,8 @@ header{
             // border:1px solid orange;
             border-radius:22px;
             padding:25px 0px;
-            margin-bottom:15px;
-           
+            margin-bottom:25px;
+            color:black;
             justify-content:flex-start;
             background-color: #f6f6f6;
             box-shadow: 1px 1px 2px black;

@@ -87,7 +87,6 @@ header {
 .functionning {
   width: 100%;
   margin-top: 20px;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +98,7 @@ header {
 }
 .functionning_list {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 40px;
   padding: 0 5px;
 }
 .functionning_list .func_design {
@@ -108,7 +107,8 @@ header {
   position: relative;
   border-radius: 22px;
   padding: 25px 0px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  color: black;
   justify-content: flex-start;
   background-color: #f6f6f6;
   box-shadow: 1px 1px 2px black;

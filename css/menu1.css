@@ -26,7 +26,7 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Shrikhand", cursive, arial;
-  font-size: 22px;
+  font-size: 28px;
   text-align: center;
   padding: 12px;
   position: relative;
@@ -56,6 +56,11 @@ main .menu_list {
   /*Hold the list of all existing menu item*/
   border: 1px solid purple;
   padding: 4px;
+  border-radius: 30px 30px 0 0;
+  background-color: #f5f5f5;
+  position: relative;
+  top: -54px;
+  padding: 25px 10px;
 }
 main .menu_title {
   display: flex;
@@ -63,6 +68,7 @@ main .menu_title {
   align-items: center;
   border: 1px solid purple;
   padding: 4px;
+  background-color: #eeeeee;
 }
 main .menu_title .menu__like_icon {
   font-size: 24px;
@@ -71,11 +77,16 @@ main .menu_title .menu__like_icon {
 }
 main .menu_title .menu__name {
   border: 1px solid black;
+  font-family: "Shrikhand", cursive, arial;
+  font-weight: 100;
 }
 main .meal_combo {
   margin-top: 10px;
   border: 1px solid red;
   padding: 3px;
+}
+main .meal_combo .meal_category {
+  margin-top: 20px;
 }
 main .meal_combo .confirmation {
   display: flex;
@@ -99,6 +110,7 @@ section.meal_category h4 {
   text-transform: uppercase;
   font-weight: normal;
   border: 1px solid red;
+  margin-top: 10px;
 }
 section.meal_category .meal_type {
   display: flex;
@@ -107,22 +119,55 @@ section.meal_category .meal_type {
   position: relative;
   border: 1px solid green;
   margin-top: 10px;
-  padding: 10px;
   text-decoration: none;
-  height: 50px;
+  height: 67px;
   overflow: hidden;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
 }
 section.meal_category .meal_type_price {
+  flex: 0 0 45%;
   align-self: flex-end;
   transition: transform 400ms;
+  width: 45%;
+  background-color: green;
+}
+section.meal_category .meal_type__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  flex: 1 0 65%;
+}
+section.meal_category .meal_type__name p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 100;
+  font-size: 14px;
+}
+section.meal_category .meal_type__name .name {
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section.meal_category .meal_type .price_valid {
+  display: flex;
+  flex-basis: auto;
+  flex: 1 1 auto;
+  border: 1px solid black;
+  height: 100%;
 }
 section.meal_category .meal_type .valid_choice {
+  flex: 1 1 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  right: -15%;
-  width: 15%;
+  max-width: 65%;
   height: 100%;
   background-color: lightgreen;
   transition-property: transform;
@@ -137,12 +182,6 @@ section.meal_category .meal_type .valid_choice .fa-check-circle {
 }
 section.meal_category .meal_type .valid_choice:hover {
   background-color: var(--grad-clr3);
-}
-section.meal_category .meal_type:hover .meal_type_price {
-  transform: translateX(-60px);
-}
-section.meal_category .meal_type:hover .valid_choice {
-  transform: translateX(-100%);
 }
 section.meal_category .meal_type:hover .valid_choice .fa-check-circle {
   transform: rotateZ(0deg) scale(1.5);
