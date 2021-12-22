@@ -17,7 +17,7 @@ body{
     box-sizing:border-box;
     margin:0 auto;
     padding:0;
-    border:1px solid black;
+    // border:1px solid black;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -46,7 +46,7 @@ header{
 
 .presentation_img{
     height:250px;
-    border:1px solid green;
+    // border:1px solid green;
     img{
         width:100%;
         height:100%;
@@ -61,10 +61,11 @@ main{
 
     .menu_list{
         /*Hold the list of all existing menu item*/
-        border:1px solid purple;
+        // border:1px solid purple;
         padding:4px;
         border-radius:30px 30px 0 0;
-        background-color: #f5f5f5;
+        // background-color: #f5f5f5;
+        background-color: #eee;
         position:relative;
         top:-54px; 
         padding: 25px 10px;
@@ -74,16 +75,16 @@ main{
         display:flex;
         justify-content: space-between;
         align-items: center;
-        border:1px solid purple;
+        // border:1px solid purple;
         padding:4px;
         background-color: #eeeeee;
          .menu__like_icon{
             font-size: 24px;
-            border:1px solid orange;
+            // border:1px solid orange;
             padding: 11px;
          }
          .menu__name{
-             border:1px solid black;
+            //  border:1px solid black;
              font-family: "Shrikhand", cursive, arial;
              font-weight:100;
          }
@@ -92,9 +93,9 @@ main{
     /*Menu items*/
     .meal_combo{
         margin-top:10px;
-        border:1px solid red;
+        // border:1px solid red;
         padding:3px;
-
+        background-color: #eee;
         .meal_category{
             margin-top: 20px;
         }
@@ -104,7 +105,7 @@ main{
             display:flex;
             justify-content: center;
             align-items: center;
-            border:1px solid black;
+            // border:1px solid black;
             padding:4px;
             height:150px;
              .buy{
@@ -131,8 +132,9 @@ main{
             h4{
                 text-transform:uppercase ;
                 font-weight: normal;
-                border:1px solid red;
+                // border:1px solid red;
                 margin-top:10px;
+                padding: 0px 10px;
             }
 
             .meal_type{
@@ -141,7 +143,7 @@ main{
                 align-items:center;
                 width:99%;
                 position:relative;
-                border:1px solid green;
+                // border:1px solid green;
                 margin-top:10px;
                 // padding:10px;
                 text-decoration:none;
@@ -155,18 +157,21 @@ main{
                     align-self:flex-end;
                     transition:transform 400ms;
                     width:30px;
-                    background-color:green;
-                    border:2px solid blue;
+                    padding-bottom: 7px;
+                    font-weight: 500;
+                    // background-color:green;
+                    // border:2px solid blue;
                 }
                 &__name{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    border:1px solid red;
+                    // border:1px solid red;
                     height: 100%;
                     overflow: hidden;
                     white-space: nowrap;
-                    padding: 10px;    
+                    // padding: 10px;    
+                    padding: 10px 2px 5px 10px;
                     // flex-basis: 65%;
                     flex:1 1 65%;
                     // Making ellipssis text on overflow
@@ -175,6 +180,7 @@ main{
                         text-overflow: ellipsis;
                         font-weight:100;
                         font-size:14px;
+                        margin-top: 5px;
                     }
                    
                     .name{
@@ -190,7 +196,7 @@ main{
                     display:flex;
                     flex-basis:auto;
                     flex:1 1 auto;
-                    border:1px solid black;
+                    // border:1px solid black;
                     // width:0px;
                     height: 100%;
                    
@@ -203,11 +209,11 @@ main{
                     justify-content: center;
                     align-items: center;
                     position:relative;
-                    right:-45%;
+                    right:-60%;
                     max-width:65%;
                     height:100%;
                     background-color:lightgreen;
-                    transition-property:transform, width, position;
+                    transition-property:transform, width, position, margin;
                     transition-duration:500ms;
                     width:0px;
                     // display:none;
@@ -240,8 +246,9 @@ main{
                     // width:65%;
                     width:60px;
                     right:0;
+                    margin-left:20px;
                       .fa-check-circle{
-                          transform:rotateZ(00deg) scale(1.5);
+                          transform:rotateZ(00deg) scale(1.1);
                       }
                     }
                 }
