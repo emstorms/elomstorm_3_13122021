@@ -11,7 +11,7 @@
 --grad-clr3: #99E2D0;
 }
 
-
+/*Setting animation delay according to the element index*/
 @for $i from 1 through 10 {
     .meal_type:nth-of-type(#{$i}) {
         animation-delay: #{$i * 0.2}s;
@@ -145,6 +145,26 @@ main{
                 // border:1px solid red;
                 margin-top:10px;
                 padding: 0px 10px;
+                position:relative;
+                
+                &::after{
+                    content:"";
+                    position:absolute;
+                    width:20px;
+                    border:1px solid var(--grad-clr3);
+                    left:10px;
+                    bottom:-2px;
+                    
+                    // transform:scale(2);
+                    transition: transform 350ms;
+                    transform-origin:left;
+                    
+                }
+
+                //animating underline on h4interaction
+                &:hover:after{
+                    transform:scaleX(4);
+                }
             }
 
             .meal_type{
