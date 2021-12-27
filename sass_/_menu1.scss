@@ -76,7 +76,7 @@ header{
 // Composing Menu with all exissting item. 
 // Listing  dish entry and dessert categories
 main{
-    border:1px solid red;
+    // border:1px solid red;
 
     .menu_list{
         /*Hold the list of all existing menu item*/
@@ -138,7 +138,21 @@ main{
             font-size:16px;
             // margin-bottom: 55px;
             cursor:pointer;
+
+// Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
+// L’ombre portée devra également être plus visible.
+// --grad-clr1:#9356DC;
+// --grad-clr2: #FF79DA;
+// --grad-clr3: #99E2D0;
+            &:hover{
+                
+                // background-image: linear-gradient(to bottom right, lighten(var(--grad-clr2),40%), lighten(var(--grad-clr1),40%));
+                background-image: linear-gradient(to bottom right, lighten(#9356DC,10%), lighten(#FF79DA,10%));
+            }
+
           }
+
+
         }
 
        

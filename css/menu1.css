@@ -88,7 +88,6 @@ header a {
 }
 
 main {
-  border: 1px solid red;
   /*Menu items*/
 }
 main .menu_list {
@@ -139,6 +138,9 @@ main .meal_combo .confirmation .buy {
   box-shadow: 1px 0.4px 3px 0px #453b3b;
   font-size: 16px;
   cursor: pointer;
+}
+main .meal_combo .confirmation .buy:hover {
+  background-image: linear-gradient(to bottom right, #ae80e5, #fface8);
 }
 
 section.meal_category h4 {
