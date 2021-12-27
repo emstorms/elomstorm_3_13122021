@@ -124,7 +124,7 @@ header {
 }
 .discovering__exploration .bttn_exploration {
   border-radius: 36px;
-  background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
+  background: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
   color: white;
   padding: 15px 25px;
   box-shadow: 1px 0.4px 8px 0px #453b3b;

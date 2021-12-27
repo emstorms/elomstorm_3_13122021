@@ -1,3 +1,5 @@
+@import "../components_/buttons";
+
 
 *{
     box-sizing:border-box;
@@ -158,11 +160,12 @@ header{
         }   
     }
     .bttn_exploration{
-        border-radius:36px;
-        background-image:linear-gradient(to bottom right, var(--grad-clr2),var(--grad-clr1));
-        color: white;
-        padding:15px 25px;
-        box-shadow: 1px 0.4px 8px 0px #453b3b;
+        // border-radius:36px;
+        // background-image:linear-gradient(to bottom right, var(--grad-clr2),var(--grad-clr1));
+        // color: white;
+        // padding:15px 25px;
+        // box-shadow: 1px 0.4px 8px 0px #453b3b;
+        @include button_default(var(--grad-clr2),var(--grad-clr1));
         margin-bottom: 55px;
     }
     }

@@ -1,0 +1,16 @@
+
+//Button with gradient color
+
+@mixin button_2color($color1,$color2,$color_direction){
+    // this mixin set up the design of a button
+    background:linear-gradient($color_direction ,$color1,$color2);
+    border:1px solid black;
+}
+
+@mixin button_default($color1,$color2){
+    border-radius:36px;
+    background:linear-gradient(to bottom right ,$color1,$color2);
+    color: white;
+    padding:15px 25px;
+    box-shadow: 1px 0.4px 8px 0px #453b3b;
+}
