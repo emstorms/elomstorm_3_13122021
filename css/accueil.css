@@ -13,14 +13,11 @@
 /*Animations*/
 @keyframes spinit {
   from {
-    border-width: 0px;
-    transform: rotateZ(360deg);
+    transform: rotateZ(-360deg);
     opacity: 1;
   }
   to {
-    border-width: 50px;
-    transform: rotateZ(0deg);
-    opacity: 0.8;
+    transform: rotateZ(360deg);
   }
 }
 @keyframes hide_loader {
@@ -29,8 +26,10 @@
     background-color: white;
     z-index: 10;
   }
+  70% {
+    opacity: 1;
+  }
   100% {
-    background-color: rgba(155, 255, 255, 0.1);
     z-index: -1;
   }
 }
@@ -56,7 +55,7 @@ body {
   display: flex;
   justify-content: center;
   animation: hide_loader;
-  animation-duration: 7s;
+  animation-duration: 3s;
 }
 .loader_container .spinloader {
   opacity: 0;
@@ -65,9 +64,12 @@ body {
   position: fixed;
   border: 4px solid black;
   border-color: var(--grad-clr1) var(--grad-clr3) var(--grad-clr2) black;
-  margin-top: 50%;
+  margin-top: 30%;
   border-radius: 50%;
-  animation: 3s spinit 2 linear;
+  animation-name: spinit;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
+  animation-timing-function: linear;
 }
 
 header {
@@ -284,7 +286,7 @@ header {
   background-clip: text;
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 300ms;
+  transition-duration: 750ms;
 }
 .restaurant__type__legend .fa-heart.far {
   color: black;

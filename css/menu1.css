@@ -140,6 +140,9 @@ main .meal_combo .confirmation .buy {
   font-size: 16px;
   cursor: pointer;
 }
+main .meal_combo .confirmation .buy:hover {
+  background-image: linear-gradient(to bottom right, #ae80e5, #fface8, #c1ede2);
+}
 
 section.meal_category h4 {
   text-transform: uppercase;
@@ -214,6 +217,7 @@ section.meal_category .meal_type .price_valid {
   display: flex;
   flex-basis: auto;
   flex: 1 1 auto;
+  justify-content: space-between;
   height: 100%;
 }
 section.meal_category .meal_type .valid_choice {
@@ -222,12 +226,12 @@ section.meal_category .meal_type .valid_choice {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: -60%;
+  right: -100%;
   max-width: 65%;
   height: 100%;
   background-color: lightgreen;
   transition-property: transform, width, position, margin;
-  transition-duration: 500ms;
+  transition-duration: 700ms;
   width: 0px;
 }
 section.meal_category .meal_type .valid_choice .fa-check-circle {

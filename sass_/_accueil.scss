@@ -24,14 +24,14 @@
 //Spinner
 @keyframes spinit {
     from{
-        border-width:0px;
-        transform:rotateZ(360deg);
+        // border-width:0px;
+        transform:rotateZ(-360deg);
         opacity: 1;
     }
     to{
-        border-width: 50px;
-        transform:rotateZ(0deg);
-        opacity: .8;
+        // border-width: 50px;
+        transform:rotateZ(360deg);
+        // opacity: 0;
     }
     
 }
@@ -46,11 +46,12 @@
     70%{
         
         // background-color: rgba(155, 255, 255, 0.1);
-        // opacity: 0;
+        opacity: 1;
         // display:none;
     }
     100%{
-        background-color: rgba(155, 255, 255, 0.1);
+        // background-color: rgba(155, 255, 255, 0.1);
+        
         z-index:-1;
     }
 }
@@ -78,7 +79,7 @@ body{
     justify-content: center;
     //Animation hide this
     animation:hide_loader;
-    animation-duration: 7s;
+    animation-duration: 3s;
     
     .spinloader{   
      opacity: 0;
@@ -89,9 +90,12 @@ body{
      border-color:var(--grad-clr1) var(--grad-clr3)  var(--grad-clr2) black;        
     //  top:45%;
     //  left:50%;
-    margin-top:50%;
+    margin-top:30%;
     border-radius:50%;
-    animation: 3s spinit 2 linear;
+    animation-name:spinit;
+    animation-duration:2s;
+    animation-iteration-count:5;
+    animation-timing-function: linear;
     }
 }
 
@@ -385,7 +389,7 @@ header{
                         background-clip: text; 
                         opacity:0;
                         transition-property:opacity;
-                        transition-duration:300ms;
+                        transition-duration:750ms;
                 }
                 &.far{
                         //empty heart

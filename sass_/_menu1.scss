@@ -138,6 +138,11 @@ main{
             font-size:16px;
             // margin-bottom: 55px;
             cursor:pointer;
+            &:hover{
+                background-image: linear-gradient(to bottom right, lighten(#9356DC,10%),lighten(#FF79DA,10%), lighten(#99E2D0,10%));
+   
+
+            }
           }
         }
 
@@ -246,6 +251,7 @@ main{
                     display:flex;
                     flex-basis:auto;
                     flex:1 1 auto;
+                    justify-content: space-between;
                     // border:1px solid black;
                     // width:0px;
                     height: 100%;
@@ -259,12 +265,12 @@ main{
                     justify-content: center;
                     align-items: center;
                     position:relative;
-                    right:-60%;
+                    right:-100%;
                     max-width:65%;
                     height:100%;
                     background-color:lightgreen;
                     transition-property:transform, width, position, margin;
-                    transition-duration:500ms;
+                    transition-duration:700ms;
                     width:0px;
                     // display:none;
 
