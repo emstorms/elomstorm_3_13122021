@@ -237,7 +237,7 @@ header {
   background-clip: text;
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 300ms;
+  transition-duration: 400ms;
 }
 .restaurant__type__legend .fa-heart.far {
   color: black;
