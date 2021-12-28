@@ -44,10 +44,20 @@ header{
     padding:12px;
     position:relative;
 
-    &::before{
+    // &::before{
+    //     // icon_previous 
+    //     font-family:FontAwesome,cursive;
+    //     content:"\f060";
+    //     position:absolute;
+    //     left:0;
+    // }
+
+    a{
         // icon_previous 
-        font-family:FontAwesome,cursive;
-        content:"\f060";
+        text-decoration:none;
+        // font-family:FontAwesome,cursive;
+        // content:"\f060";
+        color:black;
         position:absolute;
         left:0;
     }
