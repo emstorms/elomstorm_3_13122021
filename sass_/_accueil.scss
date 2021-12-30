@@ -61,7 +61,7 @@ body{
     box-sizing:border-box;
     margin:0 auto;
     padding:0;
-    border:1px solid black;
+    // border:1px solid black;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -277,7 +277,7 @@ header{
 // RESTAURANTS LIST
 .restaurant{
     width:100%;
-    border:1px solid black;
+    // border:1px solid black;
     padding:5px;
     padding-top: 30px;
     background-color: #f0ecec;
@@ -459,3 +459,68 @@ header{
     }
 
 // }
+
+
+//LArge screen dispositions
+@media screen and (min-width:860px) {
+    //Setting 205px padding L and R to .discovering__exploration, functionning and restaurant +footer
+    .discovering__exploration{
+        padding:0 205px;
+    }
+    .functionning{
+        padding:0 205px;
+        margin-top: 25px;
+    }
+    .restaurant{
+        padding:0 205px;
+        margin-top: 25px;
+        // margin-bottom:25px;
+    }
+
+    .bttn_exploration{
+        width:300px;
+        align-self:center;
+        
+    }
+    footer{
+       padding:0 205px;
+    //    margin-top: 25px;
+    }
+
+    // functionning list are now  displayed horizontally
+     .functionning_list{
+         display:flex;
+         justify-content: space-around;
+         align-items: center;
+         width:100%;
+        //  background-color:rgb(102, 55, 55);
+        .func_design{
+           width:31%;
+           margin-bottom:0px;
+           &:last-of-type {
+            margin-bottom: 0px;
+            }
+        }
+     }
+     
+    
+
+    // Restaurant list shown 2x2
+    .restaurant__list{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content:space-between;
+        margin-top:0px;//reset mobile margin
+    
+        article{
+            width:48%;
+            margin-top:25px;
+
+            &:last-of-type{
+                margin-bottom: 25px;
+            }
+
+        }
+    }
+
+}

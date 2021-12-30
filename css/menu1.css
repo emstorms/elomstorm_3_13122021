@@ -150,19 +150,17 @@ section.meal_category h4 {
   margin-top: 10px;
   padding: 0px 10px;
   position: relative;
+  width: auto;
 }
 section.meal_category h4::after {
   content: "";
   position: absolute;
-  width: 20px;
+  width: 38px;
   border: 1px solid var(--grad-clr3);
   left: 10px;
   bottom: -2px;
   transition: transform 350ms;
   transform-origin: left;
-}
-section.meal_category h4:hover:after {
-  transform: scaleX(4);
 }
 section.meal_category .meal_type {
   display: flex;

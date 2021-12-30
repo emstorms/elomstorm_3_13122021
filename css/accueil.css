@@ -38,7 +38,6 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,7 +200,6 @@ header {
 
 .restaurant {
   width: 100%;
-  border: 1px solid black;
   padding: 5px;
   padding-top: 30px;
   background-color: #f0ecec;
@@ -336,6 +334,59 @@ footer ul .has_icon:first-of-type::before {
   margin-right: 10px;
   font-size: 12px;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 860px) {
+  .discovering__exploration {
+    padding: 0 205px;
+  }
+
+  .functionning {
+    padding: 0 205px;
+    margin-top: 25px;
+  }
+
+  .restaurant {
+    padding: 0 205px;
+    margin-top: 25px;
+  }
+
+  .bttn_exploration {
+    width: 300px;
+    align-self: center;
+  }
+
+  footer {
+    padding: 0 205px;
+  }
+
+  .functionning_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .functionning_list .func_design {
+    width: 31%;
+    margin-bottom: 0px;
+  }
+  .functionning_list .func_design:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  .restaurant__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 0px;
+  }
+  .restaurant__list article {
+    width: 48%;
+    margin-top: 25px;
+  }
+  .restaurant__list article:last-of-type {
+    margin-bottom: 25px;
+  }
 }
 
 /*# sourceMappingURL=accueil.css.map */

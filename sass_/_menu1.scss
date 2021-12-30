@@ -161,11 +161,11 @@ main{
                 margin-top:10px;
                 padding: 0px 10px;
                 position:relative;
-                
+                width:auto;
                 &::after{
                     content:"";
                     position:absolute;
-                    width:20px;
+                    width:38px;
                     border:1px solid var(--grad-clr3);
                     left:10px;
                     bottom:-2px;
@@ -178,7 +178,7 @@ main{
 
                 //animating underline on h4interaction
                 &:hover:after{
-                    transform:scaleX(4);
+                    // transform:scaleX(4);
                 }
             }
 
