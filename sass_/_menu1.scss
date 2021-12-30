@@ -395,8 +395,16 @@ main{
                 //*************
 @media screen and (min-width:860px){
 
+    header i{
+        margin-left:100px;
+    }
+
     .presentation_img {
         height: 450px;
+
+        img{
+            border-radius: 30px 30px 0 0;
+        }
       }
       main {
         padding: 0 100px;
@@ -426,7 +434,8 @@ main{
 
     footer{
         position:relative;
-        top:-54px; //collapse footer with nested tag to avoid blank space
+        margin-top: -54px; //collapse footer with nested tag to avoid blank space
+        padding:0 100px;
     }
 
 
