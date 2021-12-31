@@ -171,6 +171,10 @@ header{
         // box-shadow: 1px 0.4px 8px 0px #453b3b;
         @include button_default(var(--grad-clr2),var(--grad-clr1));
         margin-bottom: 55px;
+
+        &:hover{
+         background-image: linear-gradient(to bottom right, #ae80e5, #fface8, #c1ede2);
+        }
     }
     }
 
@@ -228,7 +232,8 @@ header{
             .func_icon_title{
                 display:flex;
                 margin-left:35px;
-
+                align-items: center;
+                justify-content: center;
                 > i:first-child{
                     width:25px;
                 }
@@ -460,9 +465,76 @@ header{
 
 // }
 
+@media screen and (min-width:860px) and (max-width:1080px){
 
+      // functionning list are now  displayed horizontally
+      .functionning_list{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+       //  background-color:rgb(102, 55, 55);
+       .func_design{
+          width:31%;
+          margin-bottom:0px;
+          justify-content: center;
+           align-items: center;
+          &:last-of-type {
+           margin-bottom: 0px;
+           }
+       }
+    }
+    
+   
+
+   // Restaurant list shown 2x2
+   .restaurant__list{
+       display:flex;
+       flex-flow:row wrap;
+       justify-content:space-between;
+       margin-top:0px;//reset mobile margin
+   
+       article{
+           width:48%;
+           margin-top:25px;
+
+           &:last-of-type{
+               margin-bottom: 25px;
+           }
+
+       }
+   }
+
+    .discovering__exploration{
+        padding:0 95px;
+    }
+    .functionning{
+        padding:0 95px;
+        margin-top: 25px;
+    }
+    .restaurant{
+        padding:0 95px;
+        margin-top: 25px;
+        // margin-bottom:25px;
+    }
+
+    .bttn_exploration{
+        width:300px;
+        align-self:center;
+        
+    }
+    footer{
+       padding:0 95px;
+    //    margin-top: 25px;
+        a{
+            
+            text-decoration:none;
+            color:white;
+        }
+    }
+}
 //LArge screen dispositions
-@media screen and (min-width:860px) {
+@media screen and (min-width:1081px) {
     //Setting 205px padding L and R to .discovering__exploration, functionning and restaurant +footer
     .discovering__exploration{
         padding:0 205px;
@@ -485,6 +557,11 @@ header{
     footer{
        padding:0 205px;
     //    margin-top: 25px;
+        a{
+            
+            text-decoration:none;
+            color:white;
+        }
     }
 
     // functionning list are now  displayed horizontally
@@ -497,6 +574,8 @@ header{
         .func_design{
            width:31%;
            margin-bottom:0px;
+           justify-content: center;
+            align-items: center;
            &:last-of-type {
             margin-bottom: 0px;
             }

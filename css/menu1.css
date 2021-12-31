@@ -290,6 +290,9 @@ footer ul .has_icon:first-of-type::before {
   font-size: 12px;
   font-weight: lighter;
 }
+footer a {
+  color: white;
+}
 
 /*Animations*/
 @keyframes menu_apparition {
