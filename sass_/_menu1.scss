@@ -44,10 +44,20 @@ header{
     padding:12px;
     position:relative;
 
-    &::before{
+    // &::before{
+    //     // icon_previous 
+    //     font-family:FontAwesome,cursive;
+    //     content:"\f060";
+    //     position:absolute;
+    //     left:0;
+    // }
+
+    a{
         // icon_previous 
-        font-family:FontAwesome,cursive;
-        content:"\f060";
+        text-decoration:none;
+        // font-family:FontAwesome,cursive;
+        // content:"\f060";
+        color:black;
         position:absolute;
         left:0;
     }
@@ -66,7 +76,7 @@ header{
 // Composing Menu with all exissting item. 
 // Listing  dish entry and dessert categories
 main{
-    border:1px solid red;
+    // border:1px solid red;
 
     .menu_list{
         /*Hold the list of all existing menu item*/
@@ -128,6 +138,11 @@ main{
             font-size:16px;
             // margin-bottom: 55px;
             cursor:pointer;
+            &:hover{
+                background-image: linear-gradient(to bottom right, lighten(#9356DC,10%),lighten(#FF79DA,10%), lighten(#99E2D0,10%));
+   
+
+            }
           }
         }
 
@@ -146,11 +161,11 @@ main{
                 margin-top:10px;
                 padding: 0px 10px;
                 position:relative;
-                
+                width:auto;
                 &::after{
                     content:"";
                     position:absolute;
-                    width:20px;
+                    width:38px;
                     border:1px solid var(--grad-clr3);
                     left:10px;
                     bottom:-2px;
@@ -163,7 +178,7 @@ main{
 
                 //animating underline on h4interaction
                 &:hover:after{
-                    transform:scaleX(4);
+                    // transform:scaleX(4);
                 }
             }
 
@@ -183,6 +198,8 @@ main{
                 background-color:white;
                 color:black;
                 border-radius:15px;
+                margin-bottom: 17px;
+                box-shadow: 1px 1px 7px -1px gray;
                 /*Animation*/
                     /*setting animation delay with counter*/ 
                 // counter-increment:counter_anim_delay;
@@ -236,6 +253,7 @@ main{
                     display:flex;
                     flex-basis:auto;
                     flex:1 1 auto;
+                    justify-content: space-between;
                     // border:1px solid black;
                     // width:0px;
                     height: 100%;
@@ -249,12 +267,12 @@ main{
                     justify-content: center;
                     align-items: center;
                     position:relative;
-                    right:-60%;
+                    right:-100%;
                     max-width:65%;
                     height:100%;
                     background-color:lightgreen;
                     transition-property:transform, width, position, margin;
-                    transition-duration:500ms;
+                    transition-duration:700ms;
                     width:0px;
                     // display:none;
 
@@ -355,6 +373,9 @@ main{
                     }
                     
                 }
+                a{
+                    color:white;
+                }
             }
         
 
@@ -374,6 +395,55 @@ main{
 
 //  }
 
+                //*************
+                // LARE SCREEN
+                //*************
+@media screen and (min-width:860px){
 
+    header i{
+        margin-left:100px;
+    }
+
+    .presentation_img {
+        height: 450px;
+
+        img{
+            border-radius: 30px 30px 0 0;
+        }
+      }
+      main {
+        padding: 0 100px;
+      }
+
+    // tree columns menu
+    .meal_category{
+        width:31%;
+        // border:1px solid black;
+    }
+    .meal_combo{
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        .confirmation {
+            //Button
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        height: 150px;
+        width: 340px;
+        align-self:center;
+        margin:0 auto;
+      }
+    }
+
+    footer{
+        position:relative;
+        margin-top: -54px; //collapse footer with nested tag to avoid blank space
+        padding:0 100px;
+    }
+
+
+}
 
 
