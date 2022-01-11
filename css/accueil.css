@@ -65,7 +65,7 @@ body {
   position: fixed;
   border: 4px solid black;
   border-color: var(--grad-clr1) var(--grad-clr3) var(--grad-clr2) black;
-  margin-top: 30%;
+  margin-top: 10%;
   border-radius: 50%;
   animation-name: spinit;
   animation-duration: 2s;
@@ -101,7 +101,7 @@ header {
 }
 .discovering input[type=search]::placeholder {
   font-family: Arial, "FontAwesome";
-  background: "\f3c5";
+  /* background: "\f3c5"; */
   font-weight: 600;
 }
 .discovering__exploration {
@@ -295,10 +295,6 @@ header {
 }
 .restaurant__type__legend .fa-heart.far {
   color: black;
-}
-.restaurant__type__legend .fa-heart:hover {
-  background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
-  background-clip: text;
 }
 
 /***********

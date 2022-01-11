@@ -198,12 +198,16 @@ main{
                 background-color:white;
                 color:black;
                 border-radius:15px;
+                box-shadow: 1px 1px 3px -2px black;
+                    //Testing boxshadow gradient 
+                    //Testing boxshadow gradient 
+                    //rgba(0, 0, 0, 0.08) 0px 4px 4px;
+
+
+
+                    
                 /*Animation*/
                     /*setting animation delay with counter*/ 
-                // counter-increment:counter_anim_delay;
-                // --anim_delay:calc(counter_anim_delay);
-                // animation: 1s ease-out 100ms menu_apparition;
-                // animation: 1s ease-out menu_apparition;
                 animation-name: menu_apparition;
                 animation-duration: 1s;
                 animation-timing-function: ease-out;
@@ -252,15 +256,11 @@ main{
                     flex-basis:auto;
                     flex:1 1 auto;
                     justify-content: space-between;
-                    // border:1px solid black;
-                    // width:0px;
                     height: 100%;
                    
                 }
 
                 .valid_choice{
-                    flex:1 1 auto;
-                    // display:inline-block;
                     display:flex;
                     justify-content: center;
                     align-items: center;
@@ -297,9 +297,6 @@ main{
                     }
 
                     .valid_choice{
-                    // transform:translateX(-100%);
-                    // display:flex;
-                    // width:65%;
                     width:60px;
                     right:0;
                     margin-left:20px;
@@ -344,7 +341,6 @@ main{
                     .has_icon::before{
                         display: inline-block;
                         width:15px;
-                        // border:1px solid rgb(240, 239, 239);
                     }
         
                     .has_icon:nth-of-type(2){
@@ -438,7 +434,8 @@ main{
     footer{
         position:relative;
         margin-top: -54px; //collapse footer with nested tag to avoid blank space
-        padding:0 100px;
+
+        padding:0 114px; //110px + 4px TO align vertically with on.meal_combo that have 4px
     }
 
 
