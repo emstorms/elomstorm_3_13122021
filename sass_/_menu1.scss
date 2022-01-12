@@ -218,6 +218,8 @@ main{
                     width:30px;
                     padding-bottom: 7px;
                     font-weight: 500;
+                    position:relative;
+                    left:30px;
                     // background-color:green;
                     // border:2px solid blue;
                 }
@@ -299,7 +301,7 @@ main{
                     .valid_choice{
                     width:60px;
                     right:0;
-                    margin-left:20px;
+                    margin-left:45px;
                       .fa-check-circle{
                           transform:rotateZ(00deg) scale(1.1);
                       }

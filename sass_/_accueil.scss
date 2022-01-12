@@ -103,14 +103,18 @@ body{
 header{
     font-family: 'Shrikhand', cursive,arial;
     font-size:22px;
-
+    font-size: 30px;
+    padding: 10px;
+    font-size: 30px;
 }
 
 .discovering{
     display:flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
     width:100%;
+    
 
     &__location{
         width:100%;
@@ -118,7 +122,6 @@ header{
     
     form{
         width:100%;
-        padding:0 2px;
         height:43px;
     }
 
@@ -130,6 +133,7 @@ header{
         background-color:#eaeaea;
         width:inherit;
         height:inherit;
+        border:0;
         &::placeholder{
             font-family: Arial,"FontAwesome";
             background:"";
@@ -142,11 +146,13 @@ header{
     display:flex;
     flex-direction: column;
     justify-content:center;
-    padding:15px;
+    align-items: center;
+    padding:27px 25px;
     background-color:#f6f6f6;
     width:100%;
     h2{
         margin-bottom: -10px;
+        margin-top: 17px;
     }
 
     h2,
@@ -166,10 +172,11 @@ header{
     }
     .bttn_exploration{
         @include button_default(var(--grad-clr2),var(--grad-clr1));
-        margin-bottom: 55px;
-
+        margin-bottom: 35px;
+        width: 62%;
         &:hover{
          background-image: linear-gradient(to bottom right, #ae80e5, #fface8, #c1ede2);
+         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         }
     }
     }
@@ -187,20 +194,19 @@ header{
     padding:0 15px;
     &_h2{
         align-self:flex-start;
-        
+        margin-top: 24px;
     }
 
     &_list{
         width:100%;
-        margin-top:40px;
+        margin-top:30px;
         padding: 0 5px;
 
         .func_design{
 
             display:flex;
             width: 100%;
-            position:relative;
-            
+            position:relative;          
             border-radius:22px;
             padding:25px 0px;
             margin-bottom:25px;
@@ -232,7 +238,7 @@ header{
 
             //set vertical space between functionning and restaurant List
             &:last-of-type{
-                margin-bottom:80px;
+                margin-bottom:38px;
             }
            
         }
@@ -262,9 +268,10 @@ header{
 // RESTAURANTS LIST
 .restaurant{
     width:100%;
-    padding:5px;
-    padding-top: 30px;
+    // padding:5px;
+    // padding-top: 30px;
     background-color: #f0ecec;
+    padding: 27px 25px;
     &__list{
         border:1px dotted lightblue;
         // padding:5px;
@@ -272,12 +279,13 @@ header{
         display:flex;
         flex-direction: column;
         margin-top:25px;
+        padding-bottom: 25px;
     }
     &__type{
         //Articles
         display:flex;
         flex-flow: column nowrap;
-        margin-bottom:15px;
+        margin-bottom:22px;
         // width: 336px;
         width:100%;
         height:251px;
@@ -285,6 +293,7 @@ header{
         box-shadow: 1px 1px 3px black;
         text-decoration: none;
         color:black;
+        overflow: hidden;
         &__img{
             // border:1px solid yellow;
             width:100%;
@@ -306,7 +315,7 @@ header{
                 top:15px;
                 background-color:var(--grad-clr3);
                 // padding:5px;
-                color:#17B78F; //NEXT use Darker sass function
+                color:darken(#17B78F,20%); //NEXT use Darker sass function
                 padding: 5px;
             }
         }
@@ -319,7 +328,7 @@ header{
             flex: 0 0 30%;
             justify-content: space-between;
             align-items: center;
-
+            background-color: white;
             .like_icon{
                 display:flex;
                 justify-content: center;
@@ -346,7 +355,11 @@ header{
                 flex-basis:auto;
                 flex:1 0 50%;
                 height:100%;
-               
+                padding-top: 16px;
+                
+                span{
+                    color:#292626ba;
+                }
             }
             .restaurant_name{
                 margin-bottom:7px;
@@ -388,6 +401,7 @@ header{
             // font-family: 'Shrikhand', cursive;
             font-size:17px;
             font-weight:lighter;
+            margin: 10px 0px;
         }
 
         ul{
@@ -421,8 +435,24 @@ header{
              font-weight:lighter;
             } 
             }
+            a{
+                 
+                text-decoration:none;
+                color:white;
+            }
+
+            li{
+                margin-bottom: 7px;
+            }
             
         }
+
+        footer{
+            padding:0 205px;
+         //    margin-top: 25px;
+             
+         }
+     
     }
 
 // }
@@ -488,8 +518,7 @@ header{
     footer{
        padding:0 95px;
     //    margin-top: 25px;
-        a{
-            
+        a{           
             text-decoration:none;
             color:white;
         }
