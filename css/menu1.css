@@ -321,6 +321,7 @@ footer ul li {
 }
 footer a {
   color: white;
+  text-decoration: none;
 }
 
 /*Animations*/
