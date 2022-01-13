@@ -138,7 +138,6 @@ header {
   padding: 15px 25px;
   box-shadow: 1px 0.4px 7px -2px #453b3b;
   margin-bottom: 35px;
-  width: 62%;
 }
 .discovering__exploration .bttn_exploration:hover {
   background-image: linear-gradient(to bottom right, #ae80e5, #fface8, #c1ede2);

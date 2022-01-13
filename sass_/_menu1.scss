@@ -1,3 +1,4 @@
+@import "../components_/buttons";
 *{
     padding:0;
     margin:0;
@@ -43,15 +44,6 @@ header{
     text-align: center;
     padding:12px;
     position:relative;
-
-    // &::before{
-    //     // icon_previous 
-    //     font-family:FontAwesome,cursive;
-    //     content:"\f060";
-    //     position:absolute;
-    //     left:0;
-    // }
-
     a{
         // icon_previous 
         text-decoration:none;
@@ -86,8 +78,9 @@ main{
         // background-color: #f5f5f5;
         background-color: #eee;
         position:relative;
-        top:-54px; 
+        // top:-54px; 
         padding: 25px 10px;
+        margin-top: -32px;
     }
 
     .menu_title{
@@ -97,11 +90,27 @@ main{
         // border:1px solid purple;
         padding:4px;
         background-color: #eeeeee;
+        padding: 4px 15px;
          .menu__like_icon{
+             /*SASS*/
+            @extend %centered_flex;
             font-size: 24px;
             // border:1px solid orange;
             padding: 11px;
+            position:relative;
+             .fa-heart{
+             position:absolute;
+
+             }
+             .fas{
+                 //will be animated, then use the mixin heart_anim_stat1
+                 @include heart_anim_state1;            
+             }
+             &:hover .fas{
+                opacity:1;
+             }
          }
+        
          .menu__name{
             //  border:1px solid black;
              font-family: "Shrikhand", cursive, arial;
@@ -129,18 +138,19 @@ main{
             height:150px;
              .buy{
             // Buy / purshase Button
-            width:50%;
+            width:75%;
             border-radius: 36px;
             background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
             color: white;
             padding: 15px 25px;
             box-shadow: 1px 0.4px 3px 0px #453b3b;
             font-size:16px;
+            border:1px solid transparent;
             // margin-bottom: 55px;
             cursor:pointer;
             &:hover{
                 background-image: linear-gradient(to bottom right, lighten(#9356DC,10%),lighten(#FF79DA,10%), lighten(#99E2D0,10%));
-   
+                box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
             }
           }
@@ -188,8 +198,6 @@ main{
                 align-items:center;
                 width:99%;
                 position:relative;
-                // border:1px solid green;
-                // border:1px solid green;
                 margin-top:10px;
                 // padding:10px;
                 text-decoration:none;
@@ -202,10 +210,7 @@ main{
                     //Testing boxshadow gradient 
                     //Testing boxshadow gradient 
                     //rgba(0, 0, 0, 0.08) 0px 4px 4px;
-
-
-
-                    
+                  
                 /*Animation*/
                     /*setting animation delay with counter*/ 
                 animation-name: menu_apparition;
@@ -219,7 +224,8 @@ main{
                     padding-bottom: 7px;
                     font-weight: 500;
                     position:relative;
-                    left:30px;
+                    margin-right: 15px;
+                    // left:30px;
                     // background-color:green;
                     // border:2px solid blue;
                 }
@@ -256,7 +262,7 @@ main{
                 .price_valid{
                     display:flex;
                     flex-basis:auto;
-                    flex:1 1 auto;
+                    // flex:1 1 auto;
                     justify-content: space-between;
                     height: 100%;
                    
@@ -267,7 +273,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     position:relative;
-                    right:-100%;
+                    // right:-100%;
                     max-width:65%;
                     height:100%;
                     background-color:lightgreen;
@@ -301,7 +307,7 @@ main{
                     .valid_choice{
                     width:60px;
                     right:0;
-                    margin-left:45px;
+                    margin-left:15px;
                       .fa-check-circle{
                           transform:rotateZ(00deg) scale(1.1);
                       }
@@ -339,6 +345,7 @@ main{
         
                 ul{
                     list-style-type:none;
+                    margin-top: 17px;
         
                     .has_icon::before{
                         display: inline-block;
@@ -366,8 +373,11 @@ main{
                      font-size:12px;
                      font-weight:lighter;
                     } 
+                   
                     }
-                    
+                    li{
+                        margin-top:8px;
+                    }
                 }
                 a{
                     color:white;
@@ -437,7 +447,7 @@ main{
         position:relative;
         margin-top: -54px; //collapse footer with nested tag to avoid blank space
 
-        padding:0 114px; //110px + 4px TO align vertically with on.meal_combo that have 4px
+        padding:15px 114px; //110px + 4px TO align vertically with on.meal_combo that have 4px
     }
 
 

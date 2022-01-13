@@ -14,3 +14,18 @@
     padding:15px 25px;
     box-shadow: 1px 0.4px 7px -2px #453b3b;
 }
+
+@mixin heart_anim_state1{
+    color: transparent;
+    background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
+    background-clip: text;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 750ms;
+}
+
+%centered_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

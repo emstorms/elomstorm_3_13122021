@@ -173,7 +173,7 @@ header{
     .bttn_exploration{
         @include button_default(var(--grad-clr2),var(--grad-clr1));
         margin-bottom: 35px;
-        width: 62%;
+        // width: 62%;
         &:hover{
          background-image: linear-gradient(to bottom right, #ae80e5, #fface8, #c1ede2);
          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;

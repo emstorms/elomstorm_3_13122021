@@ -1,3 +1,9 @@
+main .menu_title .menu__like_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -96,8 +102,8 @@ main .menu_list {
   border-radius: 30px 30px 0 0;
   background-color: #eee;
   position: relative;
-  top: -54px;
   padding: 25px 10px;
+  margin-top: -32px;
 }
 main .menu_title {
   display: flex;
@@ -105,10 +111,27 @@ main .menu_title {
   align-items: center;
   padding: 4px;
   background-color: #eeeeee;
+  padding: 4px 15px;
 }
 main .menu_title .menu__like_icon {
+  /*SASS*/
   font-size: 24px;
   padding: 11px;
+  position: relative;
+}
+main .menu_title .menu__like_icon .fa-heart {
+  position: absolute;
+}
+main .menu_title .menu__like_icon .fas {
+  color: transparent;
+  background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
+  background-clip: text;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 750ms;
+}
+main .menu_title .menu__like_icon:hover .fas {
+  opacity: 1;
 }
 main .menu_title .menu__name {
   font-family: "Shrikhand", cursive, arial;
@@ -130,17 +153,19 @@ main .meal_combo .confirmation {
   height: 150px;
 }
 main .meal_combo .confirmation .buy {
-  width: 50%;
+  width: 75%;
   border-radius: 36px;
   background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
   color: white;
   padding: 15px 25px;
   box-shadow: 1px 0.4px 3px 0px #453b3b;
   font-size: 16px;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 main .meal_combo .confirmation .buy:hover {
   background-image: linear-gradient(to bottom right, #ae80e5, #fface8, #c1ede2);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
 section.meal_category h4 {
@@ -189,7 +214,7 @@ section.meal_category .meal_type_price {
   padding-bottom: 7px;
   font-weight: 500;
   position: relative;
-  left: 30px;
+  margin-right: 15px;
 }
 section.meal_category .meal_type__name {
   display: flex;
@@ -216,7 +241,6 @@ section.meal_category .meal_type__name .name {
 section.meal_category .meal_type .price_valid {
   display: flex;
   flex-basis: auto;
-  flex: 1 1 auto;
   justify-content: space-between;
   height: 100%;
 }
@@ -225,7 +249,6 @@ section.meal_category .meal_type .valid_choice {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: -100%;
   max-width: 65%;
   height: 100%;
   background-color: lightgreen;
@@ -246,7 +269,7 @@ section.meal_category .meal_type .valid_choice:hover {
 section.meal_category .meal_type:hover .valid_choice {
   width: 60px;
   right: 0;
-  margin-left: 45px;
+  margin-left: 15px;
 }
 section.meal_category .meal_type:hover .valid_choice .fa-check-circle {
   transform: rotateZ(0deg) scale(1.1);
@@ -267,6 +290,7 @@ footer h3 {
 }
 footer ul {
   list-style-type: none;
+  margin-top: 17px;
 }
 footer ul .has_icon::before {
   display: inline-block;
@@ -291,6 +315,9 @@ footer ul .has_icon:first-of-type::before {
   margin-right: 10px;
   font-size: 12px;
   font-weight: lighter;
+}
+footer ul li {
+  margin-top: 8px;
 }
 footer a {
   color: white;
@@ -347,7 +374,7 @@ footer a {
   footer {
     position: relative;
     margin-top: -54px;
-    padding: 0 114px;
+    padding: 15px 114px;
   }
 }
 
