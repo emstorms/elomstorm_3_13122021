@@ -303,6 +303,7 @@ header {
   color: transparent;
   background-image: linear-gradient(to bottom right, var(--grad-clr2), var(--grad-clr1));
   background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transition-property: opacity;
   transition-duration: 750ms;
