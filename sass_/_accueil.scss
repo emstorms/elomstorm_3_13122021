@@ -294,6 +294,10 @@ header{
         text-decoration: none;
         color:black;
         overflow: hidden;
+        &:hover{
+            box-shadow: 1px 1px 4px -1px purple;
+        }
+
         &__img{
             // border:1px solid yellow;
             width:100%;

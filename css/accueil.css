@@ -238,6 +238,9 @@ header {
   color: black;
   overflow: hidden;
 }
+.restaurant__type:hover {
+  box-shadow: 1px 1px 4px -1px purple;
+}
 .restaurant__type__img {
   width: 100%;
   height: 70%;
